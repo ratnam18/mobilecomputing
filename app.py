@@ -84,4 +84,4 @@ def handle_request():
         cv2.imwrite(filename, img_copy)
         os.chdir('..')
         return "Image Uploaded Successfully"
-app.run(host="0.0.0.0", port=88, debug=True)
+app.run(host="0.0.0.0", port=5000, debug=True)
