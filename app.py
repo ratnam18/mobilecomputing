@@ -77,4 +77,4 @@ def handle_request():
         print(category)
         category = str(category.item())
         return category
-app.run(host="0.0.0.0", port=88, debug=True)
+app.run(host="0.0.0.0", port=5000, debug=True)
