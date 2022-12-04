@@ -61,8 +61,8 @@ def handle_request():
     if request.method == 'POST':
         imagefile = flask.request.files['image']
         img = Image.open(imagefile) # load with Pillow
-        img_copy = cv2.cvtColor(np.array(img), cv2.COLOR_BGR2GRAY)
-        img = cv2.cvtColor(np.array(img), cv2.COLOR_BGR2GRAY)
+        # img_copy = cv2.cvtColor(np.array(img), cv2.COLOR_BGR2GRAY)
+        # img = cv2.cvtColor(np.array(img), cv2.COLOR_BGR2GRAY)
         transform = T.Compose([
             T.ToTensor(),
             T.Resize((14, 14))
